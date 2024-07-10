@@ -13,8 +13,18 @@ else:
     logged_in = False
 
 if logged_in:
-    choice = input("Withdraw (w) or Deposit (d): ")
-    
+    choice = input("Withdraw (w) or Deposit (d): ") #"w" or "d"
 
 else:
     print("You did not log-in")
+
+money = 1000
+print("You have $" + str(money))
+if choice == "d":
+    amount = int(input("How much money?: "))
+    money = money + amount
+    #money += amount
+else:
+    amount = int(input("How much money?:"))
+    money = money - amount
+print("You have $" + str(money))

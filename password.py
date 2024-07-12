@@ -27,4 +27,4 @@ if choice == "d":
 else:
     amount = int(input("How much money?:"))
     money = money - amount
-print("You have $" + str(money))
+print("You have $", money, sep="")

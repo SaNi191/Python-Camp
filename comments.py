@@ -1,2 +1,2 @@
-#this is a comment
-'''this is a multiline comment'''
+#this is a single-line comment
+'''this is a multi-line string, but also a comment'''

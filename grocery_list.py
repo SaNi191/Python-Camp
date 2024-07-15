@@ -15,4 +15,3 @@ while True:
         grocery_list.remove(item)
     elif choice == "4":
         break
-    print(grocery_list)

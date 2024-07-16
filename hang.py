@@ -1,13 +1,20 @@
 import random
-wordbank = ['ant','spider', 'oshawott', 'samuel', 'cat', 'dog', 'horse', 'bear', 'eagle', 'tiger', 'lion', 'wolf', 'cougar', 'austin','austin','austin','austin','austin','austin','austin', 'monkey', 'leopard', 'elephant', 'tardigrade', 'derek', 'cockroach', 'gorilla']
+wordbank = ['the quick brown fox jumps over the lazy dog', 'ant','spider', 'oshawott', 'samuel', 'cat', 'dog', 'horse', 'bear', 'eagle', 'tiger', 'lion', 'wolf', 'cougar', 'austin','austin','austin','austin','austin','austin','austin', 'monkey', 'leopard', 'elephant', 'tardigrade', 'derek', 'cockroach', 'gorilla']
 word = random.choice(wordbank)
-lives = 10
-lost = False
+
+difficulty = input()
+if difficulty == "e":
+    lives = 10
+elif difficulty == "m":
+    lives = 6
+else:
+    lives = 3
+
 
 guessed = []
 display = ["_"]*len(word)
 
-print(word)
+
 while True:
     if lives == 0:
         print("You lose")
@@ -34,3 +41,4 @@ while True:
     if guess == "0":
         break
     print(" ".join(display))
+    print("You have", lives,"lives left")

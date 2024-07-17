@@ -18,10 +18,10 @@ user_choice = input("Choice: ")
 if user_choice == "+":
     ans = add(num1, num2)
 elif user_choice == "-":
-    ans = num1 - num2
+    ans = sub(num1,num2)
 elif user_choice == "*":
-    ans = num1 * num2
+    ans = multiply(num1,num2)
 else:
-    ans = num1/num2
+    ans = divide(num1,num2)
 print(ans)
 #int()

@@ -2,8 +2,8 @@ import tkinter as tk
 
 def translate():
     word = entry.get()
-    secret_word = "S"+word[::-1]+"muel"   # simple transformation
-    label.config(text=f"Secret Language: {secret_word}")
+    secret_word = "S"+word[::-1].lower()+"muel"   # simple transformation
+    label.config(text="Secret Language:"+ secret_word)
 
 app = tk.Tk()
 app.title("Samenglish")

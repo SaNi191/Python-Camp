@@ -1,20 +1,21 @@
-import tkinter as tk
+import tkinter
 
 def translate():
     word = entry.get()
     secret_word = "S"+word[::-1].lower()+"muel"   # simple transformation
     label.config(text="Secret Language:"+ secret_word)
 
-app = tk.Tk()
+app = tkinter.Tk()
 app.title("Samenglish")
 app.geometry("300x300")
-entry = tk.Entry(app)
+entry = tkinter.Entry(app, width=30)
 entry.pack()
 
-button = tk.Button(app, text="Translate", command=translate)
+
+button = tkinter.Button(app, text="Translate", command=translate)
 button.pack()
 
-label = tk.Label(app, text="")
+label = tkinter.Label(app, text="",font=100)
 label.pack()
 
 app.mainloop()

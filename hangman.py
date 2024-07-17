@@ -20,6 +20,9 @@ word = random.choice(word_list)
 display = ["_"]*len(word)
 guessed = []
 while lives != 0:
+    if "".join(display) == word:
+        print("You win!")
+        break
     guess = input("guess:")
     if guess in word:
         index = 0
@@ -30,7 +33,7 @@ while lives != 0:
     else:
         lives -=1
         print("wrong")
-        guessed.append(guess)
+    guessed.append(guess)
     print("LIVES:", lives)
     print("Guessed:", guessed)
-    print(display)
+    print(" ".join(display))

@@ -8,7 +8,7 @@ while True:
         break
     elif choice == "1":
         for i in range(len(songs)):
-            print(i, ".", songs[i])
+            print(i+1, ".", songs[i])
         input("Enter to continue...")
     elif choice == "2":
         song = input("Enter the song you want to add: ")

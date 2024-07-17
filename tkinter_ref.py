@@ -1,20 +1,20 @@
 import tkinter as tk
 
-def show_secret_language():
+def translate():
     word = entry.get()
-    secret_word = ''.join(reversed(word))  # simple transformation
+    secret_word = "S"+word[::-1]+"muel"   # simple transformation
     label.config(text=f"Secret Language: {secret_word}")
 
-root = tk.Tk()
-root.title("Secret Language")
-
-entry = tk.Entry(root)
+app = tk.Tk()
+app.title("Samenglish")
+app.geometry("300x300")
+entry = tk.Entry(app)
 entry.pack()
 
-button = tk.Button(root, text="Translate", command=show_secret_language)
+button = tk.Button(app, text="Translate", command=translate)
 button.pack()
 
-label = tk.Label(root, text="")
+label = tk.Label(app, text="")
 label.pack()
 
-root.mainloop()
+app.mainloop()

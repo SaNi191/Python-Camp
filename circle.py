@@ -1,5 +1,8 @@
 import math
-pi = math.pi
 radius = int(input("Radius: "))
-ans = radius**2
-print("area of circle: ", str(ans), " pi")
+pi = math.pi
+
+area = round(radius**2 * pi,2)
+circumference = FILL THIS IN REMEMBER (C = 2pi * r)
+print("area of circle: ", area)
+print("circumference is: ", circumference)

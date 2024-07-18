@@ -1,5 +1,6 @@
-height = input("Height: ")
-width = input("Width: ")
-area = int(height) * int(width) #h x w / 2
-print(area)
-print("Area:", str(area))
+def area(h, w):
+    return h * w
+
+height = int(input("Height: "))
+width = int(input("Width: "))
+print("Area:", area(height, width))

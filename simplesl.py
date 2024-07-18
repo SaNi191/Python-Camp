@@ -1,5 +1,6 @@
 import random
-def english_to_sl(word):
+#this is a function to translate a word into my secret language
+def translate(word):
     new_word = ("S"+word[::-1]+"muel")
     return new_word
 
@@ -14,6 +15,6 @@ mystr = input("Enter a word: ").lower().split()
 tl_phrase = ""
 for word in mystr:
     random_color = random.choice(color)
-    tl_phrase += random_color + english_to_sl(word) +reset+ " "
+    tl_phrase += random_color + translate(word) +reset+ " "
 
 print(tl_phrase)
